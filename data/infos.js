@@ -1,6 +1,6 @@
 const infos = [
   {
-    image: '/sale.png',
+    image: '/Realtor-rafiki.png',
     title: 'Buy a house',
     description:
       'With over 1 million+ homes for sale available on the website, Fastbier can match you with a house you will want to call a home',

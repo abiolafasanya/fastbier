@@ -1,0 +1,19 @@
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../public//buyhouse.jpg');
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  object-position: center center;
+  height: 407px;
+  width: 100%;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5) , rgba(0,0,0,0.5));
+  position: absolute;
+  top: 0;
+  height: 210px;
+  width: 560px;
+  padding: 24px;
+  border-radius: 0.25rem;
+}

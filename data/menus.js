@@ -1,5 +1,5 @@
 const menus = [
-  { name: 'Buy', url: '/buy' },
+  { name: 'Buy', url: '/estate/buy' },
   { name: 'Sell', url: '/sell' },
   { name: 'Morgage', url: '/morgage' },
   { name: 'Feeds', url: '/feeds' },

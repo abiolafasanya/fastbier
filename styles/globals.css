@@ -6,6 +6,9 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply font-poppins;
+  }
   .hero {
     @apply bg-[url('/landing.jpg')] bg-cover object-cover bg-center;
   }

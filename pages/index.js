@@ -13,6 +13,7 @@ export default function Home() {
       <Head>
         <title>Fastbier | Home</title>
         <meta name="keyword" content="Real Estate in Nigeria" />
+        <link rel="Fastbier icon" href="/logo.svg" type="image/x-icon" />
       </Head>
 
       <section id="Section 1">
@@ -79,7 +80,6 @@ export default function Home() {
               {infos.map((item, index) => (
                 <div className="card shadow-md border text-center" key={index}>
                   <Image
-                    key={index}
                     src={item.image}
                     alt={item.title}
                     className="w-3/4 mx-auto object-cover object-center shrink-0"
