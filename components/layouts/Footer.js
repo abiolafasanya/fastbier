@@ -1,4 +1,4 @@
-import footer from '../data/footer';
+import footer from '../../data/footer';
 import Link  from 'next/link';
 import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
