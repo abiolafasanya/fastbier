@@ -1,5 +1,6 @@
 .background {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../public//buyhouse.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../public//buyhouse.jpg');
   background-position: center center;
   background-size: cover;
   object-fit: cover;
@@ -9,7 +10,11 @@
 }
 
 .overlay {
-  background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5) , rgba(0,0,0,0.5));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
   position: absolute;
   top: 0;
   height: 210px;
@@ -17,3 +22,12 @@
   padding: 24px;
   border-radius: 0.25rem;
 }
+
+.love {
+  border-radius: 9999px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 0.5rem 0.25rem;
+  display: flex;
+  align-items: center;
+}
+/* "rounded-full bg-shark-500 px-2 py-1 flex items-center" */

@@ -177,6 +177,7 @@ const Buy = () => {
                           height={10}
                         />
                         <span className="text-[12px] ml-1">10</span>
+                        <div className="rounded-full bg-shark-500 px-2 py-1 flex items-center"></div>
                       </div>
                       <div className="ml-4 w-[225px] h-[26px] text-[12px] flex items-center justify-center bg-shadow-500 text-shark-900">
                         {item.company}
@@ -186,12 +187,12 @@ const Buy = () => {
                       <div className="text-semibold text-[18px] text-white">
                         {item.description}
                       </div>
-                      <div className="rounded-full bg-shark-500 px-2 py-1 flex items-center">
+                      <div className={styles.love}>
                         <Image
                           src="/love.svg"
                           alt="love icon"
-                          width={24}
-                          height={24}
+                          width={20}
+                          height={18.35}
                         />
                       </div>
                     </div>
