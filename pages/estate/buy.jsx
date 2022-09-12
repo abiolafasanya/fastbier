@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../../styles/Buy.module.css';
-import { MdSearch } from 'react-icons/md';
+import { MdLocationOn, MdSearch } from 'react-icons/md';
+import { TbCurrencyNaira } from 'react-icons/tb';
 import Image from 'next/image';
 import properties from '../../data/buy';
 
@@ -50,7 +52,7 @@ const Buy = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             {properties.map((item, index) => (
               <>
-                <div key={index} className="relative">
+                <div key={index} className="relative bg-white shadow-md">
                   <Image
                     src={item.image}
                     alt="propery1"
@@ -86,6 +88,47 @@ const Buy = () => {
                           height={24}
                         />
                       </div>
+                    </div>
+                  </div>
+                  <div className="py-3 px-5 flex justify-between items-center">
+                    <div>
+                      <div className="flex items-center mt-4">
+                        <MdLocationOn />
+                        <h1 className="text-lg font-semibold">
+                          Ibeju-lekki, Ibeju Lekki, Lagos
+                        </h1>
+                      </div>
+                      <ul className="flex space-x-2">
+                        <li>
+                          <span className="font-bold text-2xl"></span>5 Bedroom
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          6 Bathroom
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          6 Toilet
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          5680 ft
+                        </li>
+                      </ul>
+                      <Link href="/">
+                        <a className="text-shadow-600">More Details &gt; </a>
+                      </Link>
+                    </div>
+                    <div classNamr="flex flex-col">
+                      <span className="text-2xl">
+                        &#8358; 1,650,000
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -104,7 +147,7 @@ const Buy = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             {properties.map((item, index) => (
               <>
-                <div key={index} className="relative">
+                <div key={index} className="relative bg-white shadow-md">
                   <Image
                     src={item.image}
                     alt="propery1"
@@ -142,6 +185,47 @@ const Buy = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="py-3 px-5 flex justify-between items-center">
+                    <div>
+                      <div className="flex items-center mt-4">
+                        <MdLocationOn />
+                        <h1 className="text-lg font-semibold">
+                          Ibeju-lekki, Ibeju Lekki, Lagos
+                        </h1>
+                      </div>
+                      <ul className="flex space-x-2">
+                        <li>
+                          <span className="font-bold text-2xl"></span>5 Bedroom
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          6 Bathroom
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          6 Toilet
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          5680 ft
+                        </li>
+                      </ul>
+                      <Link href="/">
+                        <a className="text-shadow-600">More Details &gt; </a>
+                      </Link>
+                    </div>
+                    <div classNamr="flex flex-col">
+                      <span className="text-2xl">
+                        &#8358; 1,650,000
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </>
             ))}
@@ -158,7 +242,7 @@ const Buy = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             {properties.map((item, index) => (
               <>
-                <div key={index} className="relative">
+                <div key={index} className="relative bg-white shadow-md">
                   <Image
                     src={item.image}
                     alt="propery1"
@@ -177,7 +261,6 @@ const Buy = () => {
                           height={10}
                         />
                         <span className="text-[12px] ml-1">10</span>
-                        <div className="rounded-full bg-shark-500 px-2 py-1 flex items-center"></div>
                       </div>
                       <div className="ml-4 w-[225px] h-[26px] text-[12px] flex items-center justify-center bg-shadow-500 text-shark-900">
                         {item.company}
@@ -187,14 +270,55 @@ const Buy = () => {
                       <div className="text-semibold text-[18px] text-white">
                         {item.description}
                       </div>
-                      <div className={styles.love}>
+                      <div className="rounded-full bg-shark-500 px-2 py-1 flex items-center">
                         <Image
                           src="/love.svg"
                           alt="love icon"
-                          width={20}
-                          height={18.35}
+                          width={24}
+                          height={24}
                         />
                       </div>
+                    </div>
+                  </div>
+                  <div className="py-3 px-5 flex justify-between items-center">
+                    <div>
+                      <div className="flex items-center mt-4">
+                        <MdLocationOn />
+                        <h1 className="text-lg font-semibold">
+                          Ibeju-lekki, Ibeju Lekki, Lagos
+                        </h1>
+                      </div>
+                      <ul className="flex space-x-2">
+                        <li>
+                          <span className="font-bold text-2xl"></span>5 Bedroom
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          6 Bathroom
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          6 Toilet
+                        </li>
+                        <li>
+                          <span className="text-shark-500 font-bold text-2xl">
+                            .{' '}
+                          </span>{' '}
+                          5680 ft
+                        </li>
+                      </ul>
+                      <Link href="/">
+                        <a className="text-shadow-600">More Details &gt; </a>
+                      </Link>
+                    </div>
+                    <div classNamr="flex flex-col">
+                      <span className="text-2xl">
+                        &#8358; 1,650,000
+                      </span>
                     </div>
                   </div>
                 </div>
