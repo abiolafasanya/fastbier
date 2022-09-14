@@ -17,17 +17,17 @@ export default function Home() {
       </Head>
 
       <section id="Section 1">
-        <div className="hero w-full min-h-screen h-full">
+        <div className="hero w-full max-h-screen md:h-full">
           <div className="bg-shark-900 h-screen opacity-60 w-full relative"></div>
-          <div className="text-center absolute top-[8rem] w-full p-24">
-            <h1 className="text-6xl text-white font-poppins font-bold p-4 shadow">
+          <div className="text-center absolute top-[8rem] w-full py-36 md:py-24 md:px-24">
+            <h1 className="text-2xl md:text-6xl text-white font-poppins font-bold p-4 shadow">
               Buy or Rent in Nigeria
             </h1>
             <h3 className="text-xl text-white font-poppins p-4 shadow">
               Your trusted and complete source of real estate in Nigeria
             </h3>
           </div>
-          <div className="absolute flex items-center font-poppins w-4/5 mx-auto left-[8rem] top-[32rem] bg-white py-3 px-7 ">
+          <div className="hidden absolute md:flex items-center font-poppins w-4/5 mx-auto left-[8rem] top-[32rem] bg-white py-3 px-7 ">
             <MdLocationOn className="top-[2rem] text-2xl text-shark-900" />
             <input
               type="search"
@@ -39,7 +39,7 @@ export default function Home() {
               Search Fastbier
             </button>
           </div>
-          <div className="absolute w-4/5 left-[8rem] top-[36rem] bg-shark-700 py-2 px-7">
+          <div className="hidden md:block absolute w-4/5 left-[8rem] top-[36rem] bg-shark-700 py-2 px-7">
             <p className="text-right text-shark-50">
               Fastbier support fair housing. See the{' '}
               <span className="text-shadow-500">Lagos for housing notice</span>
@@ -50,7 +50,7 @@ export default function Home() {
 
       <section id="Section 2">
         <div className="w-full h-full bg-white py-28">
-          <div className="max-w-6xl mx-auto grid grid-cols-2 gap-12">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <img src={img1} alt="" className="rounded shrink-0" />
             <div className="p-3 font-poppins">
               <h1 className="text-2xl mb-6 font-bold">Who we are</h1>
@@ -76,7 +76,7 @@ export default function Home() {
             <h1 className="font-bold text-2xl text-center">
               How can Fastbier help you?
             </h1>
-            <div className="grid grid-cols-3 gap-8 py-14">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-14">
               {infos.map((item, index) => (
                 <div className="card shadow-md border text-center" key={index}>
                   <Image
@@ -102,7 +102,7 @@ export default function Home() {
             <h1 className="text-2xl py-12 font-bold text-center">
               Featured Property & Houses for sale
             </h1>
-            <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
               {houses.map((item, index) => (
                 <div key={index} style={housesStyle(item.image)}>
                   <div className="p-6 relative">
@@ -139,7 +139,7 @@ export default function Home() {
 
       <section id="Section 5">
         <div className="bg-spring-wood-500 py-16 font-poppins">
-          <div className="max-w-6xl mx-auto grid grid-cols-2 gap-12 items-center p-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-6">
             <div>
               <h1 className="text-2xl font-semibold">Talk to Fastbier Agent</h1>
               <p className="text-base">

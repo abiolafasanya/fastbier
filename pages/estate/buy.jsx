@@ -19,8 +19,8 @@ const Buy = () => {
       </Head>
       <section className={styles.background}>
         <div id="content" className="w-full h-full">
-          <div className="pt-[300px] flex flex-row mx-auto max-w-6xl w-full">
-            <div className="px-5 flex items-center bg-white w-4/5">
+          <div className="hidden pt-[300px] md:flex flex-row mx-auto max-w-6xl w-full">
+            <div className="px-5 md:flex items-center bg-white w-4/5">
               <label htmlFor="search" className="top-[2rem]">
                 <MdSearch className="text-2xl text-shark-300" />
               </label>
@@ -44,7 +44,7 @@ const Buy = () => {
       </section>
 
       <section>
-        <div className="flex flex-col mx-auto max-w-6xl w-full pt-24">
+        <div className="flex flex-col mx-auto max-w-6xl w-full md:pt-24">
           <h1 className="text-2xl font-bold text-center">
             Lekki houses for sale
           </h1>

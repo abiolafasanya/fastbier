@@ -5,12 +5,12 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 function Footer() {
   return (
     <div className="p-6 bg-shark-500">
-      <div className="max-w-6xl mx-auto flex font-poppins">
-        <div className="w-3/4">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row font-poppins">
+        <div className="w-full md:w-3/4">
           <h1 className="text-2xl font-semibold text-shadow-500 uppercase mb-4">
             Popular Real Estate Market
           </h1>
-          <div className="flex flex-col md:flex-row space-x-24 items-center">
+          <div className="flex flex-col md:flex-row md:space-x-24 md:items-center">
             <ul className="flex flex-col space-y-4">
               {footer.sec1.map((item, index) => (
                 <li key={index} className="text-shark-200">
@@ -18,14 +18,16 @@ function Footer() {
                 </li>
               ))}
             </ul>
-            <ul className="flex flex-col space-y-4">
+            
+            <ul className="flex flex-col space-y-4 mt-8">
               {footer.sec2.map((item, index) => (
                 <li key={index} className="text-shark-200">
                   {item}
                 </li>
               ))}
             </ul>
-            <ul className="flex flex-col space-y-4">
+
+            <ul className="flex flex-col space-y-4 mt-8">
               {footer.sec3.map((item, index) => (
                 <li key={index} className="text-shark-200">
                   {item}
@@ -37,7 +39,7 @@ function Footer() {
           <h1 className="text-2xl mt-24 font-semibold text-shadow-500 uppercase mb-4">
             Search by popular state
           </h1>
-          <div className="flex flex-col md:flex-row space-x-24 items-center">
+          <div className="flex flex-col md:flex-row md:space-x-24 md:items-center">
             <ul className="flex flex-col space-y-4">
               {footer.sec1.map((item, index) => (
                 <li key={index} className="text-shark-200">
@@ -60,7 +62,7 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div className="mt-4">
+          <div className="md:my-4 my-8">
             <Link href="/">
               <a className="text-shadow-500">View more</a>
             </Link>
@@ -87,7 +89,7 @@ function Footer() {
             <h2 className="text-2xl mt-4 font-semibold text-shadow-500 uppercase">
               General
             </h2>
-            <ul className="flex flex-col mt-4 space-y-4 list-dis">
+            <ul className="flex flex-col mt-4 md:space-y-4 list-dis">
               {footer.general.map((item, index) => (
                 <li key={index} className="text-shadow-500 list-disc">
                   <span className="text-shadow-200">{item}</span>
@@ -99,17 +101,17 @@ function Footer() {
       </div>
 
       <div className="mt-16 w-full font-poppins">
-        <div className="flex items-center max-w-6xl mx-auto">
-          <div className="text-white w-2/3 pr-12">{footer.about}</div>
-          <h1 className="text-5xl font-oldenburg uppercase  ml-16 text-right text-shadow-500">
+        <div className="flex flex-col md:flex-row md:items-center max-w-6xl md:mx-auto">
+          <div className="text-white md:w-2/3 md:pr-12">{footer.about}</div>
+          <h1 className="text-5xl font-oldenburg uppercase mt-8 md:mt-1 md:ml-16 md:text-right text-shadow-500">
             Fastbier
           </h1>
         </div>
       </div>
 
       <div className="border-b border-shadow-500 max-w-6xl mx-auto py-8"></div>
-      <div className="flex justify-between items-center max-w-6xl mx-auto my-4">
-        <div className="text-base text-shadow-100">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center max-w-6xl mx-auto my-4">
+        <div className="text-base text-shadow-100 mt-4 md:mt-0">
           2021 © Fastbier. All rights reserved.
         </div>
         <div id="socialIcons" className="flex items-center space-x-4">

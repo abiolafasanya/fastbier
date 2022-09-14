@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import menus from '../../data/menus';
+import { BsList } from 'react-icons/bs';
+import { useContext } from 'react';
+import AppContext from '../../context/AppContext';
+import Sidebar from './../utility/Sidebar';
 
 const Navbar = () => {
+  const { showMenu, toggleMenu } = useContext(AppContext); 
+
   return (
     <>
       <div className="px-7 py-3 bg-shark-500">
@@ -10,10 +16,12 @@ const Navbar = () => {
           role="navigation"
           aria-label="navigation Menu"
         >
-          <div className="font-oldenburg text-shadow-500 text-3xl uppercase">
-            <Link href="/">Fastbier</Link>
+          <div className="flex items-center justify-between w-full font-oldenburg text-shadow-500 text-3xl uppercase">
+            <Link href="/"><a>Fastbier</a></Link>
+            <BsList className='md:hidden text-5xl' onClick={toggleMenu} />
           </div>
-          <ul className="flex space-x-16 font-poppins items-center">
+
+          <ul className="hidden md:flex space-x-16 font-poppins items-center">
             {menus.map((item, index) => (
               <li key={index} className="" role="menuitem">
                 <Link href={item.url}>
@@ -32,6 +40,8 @@ const Navbar = () => {
               </button>
             </div>
           </ul>
+          
+          {showMenu && <Sidebar />}
         </nav>
       </div>
     </>
