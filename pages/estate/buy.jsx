@@ -53,7 +53,7 @@ const Buy = () => {
             {properties.map((item, index) => (
               <>
                 <div key={index} className="relative bg-white shadow-md w-full">
-                  <div className="block w-[560px] h-[210px]">
+                  <div className="block w-full h-[210px]">
                   <Image
                     src={item.image}
                     alt="propery1"
@@ -147,11 +147,11 @@ const Buy = () => {
             Magodo houses for sale
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 w-full">
             {properties.map((item, index) => (
               <>
-                <div key={index} className="relative bg-white shadow-md">
-                <div className="block w-[560px] h-[210px]">
+                <div key={index} className="relative bg-white shadow-md w-full">
+                  <div className="block w-full h-[210px]">
                   <Image
                     src={item.image}
                     alt="propery1"
@@ -161,8 +161,9 @@ const Buy = () => {
                     height="210px"
                   />
                   </div>
-                   <div className={`${styles.overlay} h-[210px] md:w-[560px]`}>
-                    <div className="flex">
+                  
+                  <div className={`${styles.overlay} h-[210px] md:w-[560px]`}>
+                    <div className="flex flex-cols justify-between">
                       <div className="w-[45px] h-[25px] bg-shark-500 text-white flex items-center justify-center">
                         <Image
                           src="/image.svg"
@@ -198,7 +199,7 @@ const Buy = () => {
                           Ibeju-lekki, Ibeju Lekki, Lagos
                         </h1>
                       </div>
-                      <ul className="flex space-x-2 flex-wrap">
+                      <ul className="flex flex-wrap space-x-2">
                         <li>
                           <span className="font-bold text-2xl"></span>5 Bedroom
                         </li>
@@ -243,12 +244,11 @@ const Buy = () => {
           <h1 className="text-2xl font-bold text-center">
             Victoria Island houses for sale
           </h1>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 w-full">
             {properties.map((item, index) => (
               <>
-                <div key={index} className="relative bg-white shadow-md">
-                <div className="block w-[560px] h-[210px]">
+                <div key={index} className="relative bg-white shadow-md w-full">
+                  <div className="block w-full h-[210px]">
                   <Image
                     src={item.image}
                     alt="propery1"
@@ -258,8 +258,9 @@ const Buy = () => {
                     height="210px"
                   />
                   </div>
-                   <div className={`${styles.overlay} h-[210px] md:w-[560px]`}>
-                    <div className="flex">
+                  
+                  <div className={`${styles.overlay} h-[210px] md:w-[560px]`}>
+                    <div className="flex flex-cols justify-between">
                       <div className="w-[45px] h-[25px] bg-shark-500 text-white flex items-center justify-center">
                         <Image
                           src="/image.svg"
@@ -295,7 +296,7 @@ const Buy = () => {
                           Ibeju-lekki, Ibeju Lekki, Lagos
                         </h1>
                       </div>
-                      <ul className="flex space-x-2 flex-wrap">
+                      <ul className="flex flex-wrap space-x-2">
                         <li>
                           <span className="font-bold text-2xl"></span>5 Bedroom
                         </li>
