@@ -7,7 +7,7 @@ import AppContext from '../../context/AppContext';
 function Sidebar() {
   const { toggleMenu } = useContext(AppContext);
   return (
-    <div className="md:hidden w-1/2 absolute min-h-full bg-shadow-700 h-full z-10 top-0 right-0">
+    <div className="md:hidden transition-opacity w-1/2 absolute min-h-full bg-shadow-700 h-full z-10 top-0 right-0">
       <div className="icon px-2 py-3 bg-shark-500 rounded-r-full w-[4rem]">
         <IoIosArrowRoundBack className="text-white text-5xl rotate-180" onClick={toggleMenu}/>
       </div>

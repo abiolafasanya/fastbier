@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 const AppContext = createContext({});
 
 export const AppProvider = ({ children }) => {
-  const [showMenu, setShowMenu] = useState({});
+  const [showMenu, setShowMenu] = useState(false);
   const { pathname } = useRouter();
 
   const toggleMenu = () => {

@@ -44,25 +44,28 @@ const Buy = () => {
       </section>
 
       <section>
-        <div className="flex flex-col mx-auto max-w-6xl w-full md:pt-24">
+        <div className="flex flex-col mx-auto max-w-6xl w-full pt-12 md:pt-24">
           <h1 className="text-2xl font-bold text-center">
             Lekki houses for sale
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 w-full">
             {properties.map((item, index) => (
               <>
-                <div key={index} className="relative bg-white shadow-md">
+                <div key={index} className="relative bg-white shadow-md w-full">
+                  <div className="block w-[560px] h-[210px]">
                   <Image
                     src={item.image}
                     alt="propery1"
-                    className="object-center object-cover rounded"
+                    className="object-center object-cover rounded w-full"
                     layout="responsive"
-                    width={560}
-                    height={210}
+                    width="560px"
+                    height="210px"
                   />
-                  <div className={styles.overlay}>
-                    <div className="flex">
+                  </div>
+                  
+                  <div className={`${styles.overlay} h-[210px] md:w-[560px]`}>
+                    <div className="flex flex-cols justify-between">
                       <div className="w-[45px] h-[25px] bg-shark-500 text-white flex items-center justify-center">
                         <Image
                           src="/image.svg"
@@ -90,7 +93,7 @@ const Buy = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="py-3 px-5 flex justify-between items-center">
+                  <div className="py-3 px-5 flex flex-col md:flex-row justify-between items-center">
                     <div>
                       <div className="flex items-center mt-4">
                         <MdLocationOn />
@@ -98,7 +101,7 @@ const Buy = () => {
                           Ibeju-lekki, Ibeju Lekki, Lagos
                         </h1>
                       </div>
-                      <ul className="flex space-x-2">
+                      <ul className="flex flex-wrap space-x-2">
                         <li>
                           <span className="font-bold text-2xl"></span>5 Bedroom
                         </li>
@@ -148,15 +151,17 @@ const Buy = () => {
             {properties.map((item, index) => (
               <>
                 <div key={index} className="relative bg-white shadow-md">
+                <div className="block w-[560px] h-[210px]">
                   <Image
                     src={item.image}
                     alt="propery1"
-                    className="object-center object-cover rounded"
+                    className="object-center object-cover rounded w-full"
                     layout="responsive"
-                    width={560}
-                    height={210}
+                    width="560px"
+                    height="210px"
                   />
-                  <div className={styles.overlay}>
+                  </div>
+                   <div className={`${styles.overlay} h-[210px] md:w-[560px]`}>
                     <div className="flex">
                       <div className="w-[45px] h-[25px] bg-shark-500 text-white flex items-center justify-center">
                         <Image
@@ -185,7 +190,7 @@ const Buy = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="py-3 px-5 flex justify-between items-center">
+                  <div className="py-3 px-5 flex flex-col md:flex-row justify-between items-center">
                     <div>
                       <div className="flex items-center mt-4">
                         <MdLocationOn />
@@ -193,7 +198,7 @@ const Buy = () => {
                           Ibeju-lekki, Ibeju Lekki, Lagos
                         </h1>
                       </div>
-                      <ul className="flex space-x-2">
+                      <ul className="flex space-x-2 flex-wrap">
                         <li>
                           <span className="font-bold text-2xl"></span>5 Bedroom
                         </li>
@@ -243,15 +248,17 @@ const Buy = () => {
             {properties.map((item, index) => (
               <>
                 <div key={index} className="relative bg-white shadow-md">
+                <div className="block w-[560px] h-[210px]">
                   <Image
                     src={item.image}
                     alt="propery1"
-                    className="object-center object-cover rounded"
+                    className="object-center object-cover rounded w-full"
                     layout="responsive"
-                    width={560}
-                    height={210}
+                    width="560px"
+                    height="210px"
                   />
-                  <div className={styles.overlay}>
+                  </div>
+                   <div className={`${styles.overlay} h-[210px] md:w-[560px]`}>
                     <div className="flex">
                       <div className="w-[45px] h-[25px] bg-shark-500 text-white flex items-center justify-center">
                         <Image
@@ -280,7 +287,7 @@ const Buy = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="py-3 px-5 flex justify-between items-center">
+                  <div className="py-3 px-5 flex flex-col md:flex-row justify-between items-center">
                     <div>
                       <div className="flex items-center mt-4">
                         <MdLocationOn />
@@ -288,7 +295,7 @@ const Buy = () => {
                           Ibeju-lekki, Ibeju Lekki, Lagos
                         </h1>
                       </div>
-                      <ul className="flex space-x-2">
+                      <ul className="flex space-x-2 flex-wrap">
                         <li>
                           <span className="font-bold text-2xl"></span>5 Bedroom
                         </li>
